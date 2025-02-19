@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<title>Estate</title>
+</head>
+
+<body>
+	
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="/" class="logo">Estate</a>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-list__item has-child">
+                            <a href="/" class="has-child__link">Недвижимость<img src="images/menu-arrow.svg" alt="Открыть"></a>
+                            <ul>
+                                <li><a href="/">Жилая</a></li>
+                                <li><a href="/">Коммерческая</a></li>
+                                <li><a href="/">Инвестиционная</a></li>
+                                <li><a href="/">Эксклюзивная</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="/" class="has-child__link">Услуги</a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="/" class="has-child__link">Блог</a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="/" class="has-child__link">О компании</a>
+                        </li>
+                    </ul>
+                    <div class="header-contacts">
+                        <div class="phones">
+                            <a href="tel:+7 999 854 85 85">+7 999 854 85 85 — Москва</a>
+                            <a href="tel:+7 914 487 38 38">+7 914 487 38 38 — Владивосток</a>
+                        </div>
+                        <div class="messagers">
+                            <a href="/" class="telegram">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.52198 4.69279L8.88021 1.65478C9.60656 1.33832 12.0698 0.325651 12.0698 0.325651C12.0698 0.325651 13.2067 -0.117392 13.112 0.95857C13.0804 1.40161 12.8278 2.95226 12.5751 4.6295L11.7856 9.59791C11.7856 9.59791 11.7224 10.3258 11.1856 10.4524C10.6487 10.5789 9.76446 10.0093 9.60656 9.88273C9.48024 9.78779 7.23803 8.36372 6.41694 7.66751C6.19588 7.47764 5.94323 7.09788 6.44852 6.65484C7.58541 5.61052 8.94337 4.31304 9.76446 3.49025C10.1434 3.11049 10.5224 2.22441 8.94337 3.30037L4.49053 6.30674C4.49053 6.30674 3.98525 6.62319 3.03784 6.33838C2.09042 6.05357 0.985109 5.67382 0.985109 5.67382C0.985109 5.67382 0.22718 5.19913 1.52198 4.69279Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="whatsapp">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.40094 15.0094L5.65795 15.1611C6.7379 15.7992 7.97605 16.1366 9.23868 16.1373H9.24143C13.1191 16.1373 16.275 12.9961 16.2765 9.13548C16.2771 7.26446 15.5461 5.50536 14.2178 4.18181C12.8895 2.85849 11.1234 2.12921 9.24394 2.12844C5.36336 2.12844 2.20741 5.26912 2.20595 9.12975C2.20544 10.4527 2.57717 11.7412 3.28151 12.8558L3.44892 13.1208L2.73804 15.7045L5.40094 15.0094ZM0.705933 17.7059L1.90673 13.3407C1.16606 12.0632 0.77642 10.614 0.77703 9.12936C0.778836 4.48465 4.57563 0.705872 9.2416 0.705872C11.5057 0.706843 13.6309 1.5841 15.229 3.17639C16.8269 4.76867 17.7067 6.88522 17.7059 9.13616C17.704 13.7806 13.9064 17.5601 9.2416 17.5601C9.24126 17.5601 9.24178 17.5601 9.2416 17.5601H9.23799C7.82141 17.5596 6.42948 17.2059 5.1932 16.5346L0.705933 17.7059Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7797 6.30192C7.65066 6.01474 7.51489 6.00899 7.39216 6.00394C7.29172 5.99966 7.17684 5.99994 7.0621 5.99994C6.94722 5.99994 6.76063 6.0431 6.60286 6.21566C6.44494 6.38823 6 6.80537 6 7.65374C6 8.5022 6.61724 9.322 6.70323 9.43717C6.78938 9.55212 7.89474 11.3488 9.6452 12.04C11.1001 12.6144 11.3962 12.5001 11.7119 12.4713C12.0277 12.4426 12.7309 12.0543 12.8744 11.6517C13.018 11.2491 13.018 10.9039 12.9749 10.8319C12.9319 10.76 12.817 10.7168 12.6448 10.6307C12.4725 10.5444 11.6258 10.1272 11.4679 10.0697C11.31 10.0122 11.1952 9.98348 11.0803 10.1561C10.9655 10.3285 10.6357 10.7168 10.5352 10.8319C10.4347 10.9471 10.3342 10.9615 10.162 10.8752C9.98969 10.7887 9.43498 10.6068 8.77695 10.0194C8.26493 9.56236 7.9193 8.99791 7.81878 8.82526C7.71834 8.65284 7.80806 8.55943 7.89441 8.47346C7.97179 8.39619 8.0667 8.27212 8.15284 8.17148C8.23877 8.07078 8.26744 7.99892 8.32485 7.88389C8.38233 7.7688 8.35359 7.66809 8.31055 7.58184C8.26744 7.49559 7.93275 6.64285 7.7796 6.30186" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>       
+                    </div>
+                </nav>
+                <div class="messagers">
+                    <a href="/" class="telegram">
+                        <svg viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.52198 4.69279L8.88021 1.65478C9.60656 1.33832 12.0698 0.325651 12.0698 0.325651C12.0698 0.325651 13.2067 -0.117392 13.112 0.95857C13.0804 1.40161 12.8278 2.95226 12.5751 4.6295L11.7856 9.59791C11.7856 9.59791 11.7224 10.3258 11.1856 10.4524C10.6487 10.5789 9.76446 10.0093 9.60656 9.88273C9.48024 9.78779 7.23803 8.36372 6.41694 7.66751C6.19588 7.47764 5.94323 7.09788 6.44852 6.65484C7.58541 5.61052 8.94337 4.31304 9.76446 3.49025C10.1434 3.11049 10.5224 2.22441 8.94337 3.30037L4.49053 6.30674C4.49053 6.30674 3.98525 6.62319 3.03784 6.33838C2.09042 6.05357 0.985109 5.67382 0.985109 5.67382C0.985109 5.67382 0.22718 5.19913 1.52198 4.69279Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="/" class="whatsapp">
+                        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.40094 15.0094L5.65795 15.1611C6.7379 15.7992 7.97605 16.1366 9.23868 16.1373H9.24143C13.1191 16.1373 16.275 12.9961 16.2765 9.13548C16.2771 7.26446 15.5461 5.50536 14.2178 4.18181C12.8895 2.85849 11.1234 2.12921 9.24394 2.12844C5.36336 2.12844 2.20741 5.26912 2.20595 9.12975C2.20544 10.4527 2.57717 11.7412 3.28151 12.8558L3.44892 13.1208L2.73804 15.7045L5.40094 15.0094ZM0.705933 17.7059L1.90673 13.3407C1.16606 12.0632 0.77642 10.614 0.77703 9.12936C0.778836 4.48465 4.57563 0.705872 9.2416 0.705872C11.5057 0.706843 13.6309 1.5841 15.229 3.17639C16.8269 4.76867 17.7067 6.88522 17.7059 9.13616C17.704 13.7806 13.9064 17.5601 9.2416 17.5601C9.24126 17.5601 9.24178 17.5601 9.2416 17.5601H9.23799C7.82141 17.5596 6.42948 17.2059 5.1932 16.5346L0.705933 17.7059Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7797 6.30192C7.65066 6.01474 7.51489 6.00899 7.39216 6.00394C7.29172 5.99966 7.17684 5.99994 7.0621 5.99994C6.94722 5.99994 6.76063 6.0431 6.60286 6.21566C6.44494 6.38823 6 6.80537 6 7.65374C6 8.5022 6.61724 9.322 6.70323 9.43717C6.78938 9.55212 7.89474 11.3488 9.6452 12.04C11.1001 12.6144 11.3962 12.5001 11.7119 12.4713C12.0277 12.4426 12.7309 12.0543 12.8744 11.6517C13.018 11.2491 13.018 10.9039 12.9749 10.8319C12.9319 10.76 12.817 10.7168 12.6448 10.6307C12.4725 10.5444 11.6258 10.1272 11.4679 10.0697C11.31 10.0122 11.1952 9.98348 11.0803 10.1561C10.9655 10.3285 10.6357 10.7168 10.5352 10.8319C10.4347 10.9471 10.3342 10.9615 10.162 10.8752C9.98969 10.7887 9.43498 10.6068 8.77695 10.0194C8.26493 9.56236 7.9193 8.99791 7.81878 8.82526C7.71834 8.65284 7.80806 8.55943 7.89441 8.47346C7.97179 8.39619 8.0667 8.27212 8.15284 8.17148C8.23877 8.07078 8.26744 7.99892 8.32485 7.88389C8.38233 7.7688 8.35359 7.66809 8.31055 7.58184C8.26744 7.49559 7.93275 6.64285 7.7796 6.30186" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="phones">
+                    <a href="tel:+7 999 854 85 85">+7 999 854 85 85</a>
+                </div>
+                <a href="/" class="header-language">EN</a>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-content">
+                    <picture>
+                        <source media="(max-width: 768px)" data-srcset="images/band@mobile.png">
+                        <img class="lazy banner-band" src="images/band.png" alt="Band" title="Band" />
+                    </picture>
+                    <div class="banner-man">
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/man.png 1x, images/man@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/man@mobile.png">
+                            <img class="lazy man-photo" src="images/man@low.png" data-srcset="images/man@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                        </picture>
+                        <div class="man-info">
+                            <h4>Ярослав Попов</h4>
+                            <p>СЕО Estate</p>
+                        </div> 
+                    </div>
+                    <h1>Доверие и сервисная модель — основные показатели успеха в работе компании</h1>
+                    <p>Рынок недвижимости в 2025 году сталкивается с серьезными вызовами. Изменились ключевые тенденции и запросы инвесторов.</p>
+                    <br>
+                    <p>Объективный подход к анализу рынка, детальное изучение перспектив объектов, эффективные бизнес-модели и подтвержденная ликвидность — всё это способствует сохранению и увеличению капитала наших инвесторов.</p>
+                    <div class="banner-order">
+                        <a href="/" class="btn">
+                            <span>Связаться напрямую</span>
+                            <img src="images/arrow-btn.svg" alt="Связаться напрямую" title="Связаться напрямую" />
+                        </a>
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="staf">
+        <div class="container">
+            <div class="row">
+                <h2>Инвестиционный отдел</h2>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-1.png 1x, images/staf-1@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-1@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-1@low.png" data-srcset="images/staf-1@2x.png 2x" alt="Анна Васильева" title="Анна Васильева" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Анна Васильева</h5>
+                        <p>Операционный директор</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-2.png 1x, images/staf-2@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-2@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-2@low.png" data-srcset="images/staf-2@2x.png 2x" alt="Елена Морозова" title="Елена Морозова" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Елена Морозова</h5>
+                        <p>Инвестиционный консультант</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-3.png 1x, images/staf-3@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-3@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-3@low.png" data-srcset="images/staf-3@2x.png 2x" alt="Мария Кузнецова" title="Мария Кузнецова" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Мария Кузнецова</h5>
+                        <p>Инвестиционный консультант</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-4.png 1x, images/staf-4@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-4@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-4@low.png" data-srcset="images/staf-4@2x.png 2x" alt="Алексей Смирнов" title="Алексей Смирнов" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Алексей Смирнов</h5>
+                        <p>Инвестиционный консультант</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="staf staf-2">
+        <div class="container">
+            <div class="row">
+                <h2>Маркетинг</h2>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-5.png 1x, images/staf-5@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-5@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-5@low.png" data-srcset="images/staf-5@2x.png 2x" alt="Дмитрий Иванов" title="Дмитрий Иванов" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Дмитрий Иванов</h5>
+                        <p>Руководитель отдела<br>маркетинга</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-6.png 1x, images/staf-6@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-6@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-6@low.png" data-srcset="images/staf-6@2x.png 2x" alt="Ольга Соколова" title="Ольга Соколова" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Ольга Соколова</h5>
+                        <p>Главный редактор</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="instagram">
+                                <img src="images/social-instagram.svg" alt="instagram" title="instagram" />
+                            </a>
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-7.png 1x, images/staf-7@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-7@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-7@low.png" data-srcset="images/staf-7@2x.png 2x" alt="Сергей Петров" title="Сергей Петров" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Сергей Петров</h5>
+                        <p>Арт-директор</p>
+                    </div>
+                </div>
+                <div class="staf-item">
+                    <div class="staf-item__image">
+                        <div class="socials">
+                            <a href="/" class="in">
+                                <img src="images/social-in.svg" alt="in" title="in" />
+                            </a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="images/staf-8.png 1x, images/staf-8@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="images/staf-8@mobile.png">
+                            <img class="lazy staf-photo" src="images/staf-8@low.png" data-srcset="images/staf-8@2x.png 2x" alt="Наталья Федорова" title="Наталья Федорова" />
+                        </picture>
+                    </div>
+                    <div class="staf-item__titile">
+                        <h5>Наталья Федорова</h5>
+                        <p>Маркетолог</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-contacts">
+                    <a href="/" class="logo">Estate</a>
+                    <p class="address">Москва, БЦ «Лотос», ул. Ленинская, 19</p>
+                    <p class="phone"><a href="tel:+7 999 854 85 85">+7 999 854 85 85</a> — Москва</p>
+                    <p class="phone"><a href="tel:+7 914 487 38 38">+7 914 487 38 38</a> — Владивосток</p>
+                    <p class="email"><a href="mailto:hello@estate.ru">hello@estate.ru</a></p>
+                    <div class="messagers">
+                        <a href="/" class="telegram">
+                            <svg viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.52198 4.69279L8.88021 1.65478C9.60656 1.33832 12.0698 0.325651 12.0698 0.325651C12.0698 0.325651 13.2067 -0.117392 13.112 0.95857C13.0804 1.40161 12.8278 2.95226 12.5751 4.6295L11.7856 9.59791C11.7856 9.59791 11.7224 10.3258 11.1856 10.4524C10.6487 10.5789 9.76446 10.0093 9.60656 9.88273C9.48024 9.78779 7.23803 8.36372 6.41694 7.66751C6.19588 7.47764 5.94323 7.09788 6.44852 6.65484C7.58541 5.61052 8.94337 4.31304 9.76446 3.49025C10.1434 3.11049 10.5224 2.22441 8.94337 3.30037L4.49053 6.30674C4.49053 6.30674 3.98525 6.62319 3.03784 6.33838C2.09042 6.05357 0.985109 5.67382 0.985109 5.67382C0.985109 5.67382 0.22718 5.19913 1.52198 4.69279Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="/" class="whatsapp">
+                            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.40094 15.0094L5.65795 15.1611C6.7379 15.7992 7.97605 16.1366 9.23868 16.1373H9.24143C13.1191 16.1373 16.275 12.9961 16.2765 9.13548C16.2771 7.26446 15.5461 5.50536 14.2178 4.18181C12.8895 2.85849 11.1234 2.12921 9.24394 2.12844C5.36336 2.12844 2.20741 5.26912 2.20595 9.12975C2.20544 10.4527 2.57717 11.7412 3.28151 12.8558L3.44892 13.1208L2.73804 15.7045L5.40094 15.0094ZM0.705933 17.7059L1.90673 13.3407C1.16606 12.0632 0.77642 10.614 0.77703 9.12936C0.778836 4.48465 4.57563 0.705872 9.2416 0.705872C11.5057 0.706843 13.6309 1.5841 15.229 3.17639C16.8269 4.76867 17.7067 6.88522 17.7059 9.13616C17.704 13.7806 13.9064 17.5601 9.2416 17.5601C9.24126 17.5601 9.24178 17.5601 9.2416 17.5601H9.23799C7.82141 17.5596 6.42948 17.2059 5.1932 16.5346L0.705933 17.7059Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7797 6.30192C7.65066 6.01474 7.51489 6.00899 7.39216 6.00394C7.29172 5.99966 7.17684 5.99994 7.0621 5.99994C6.94722 5.99994 6.76063 6.0431 6.60286 6.21566C6.44494 6.38823 6 6.80537 6 7.65374C6 8.5022 6.61724 9.322 6.70323 9.43717C6.78938 9.55212 7.89474 11.3488 9.6452 12.04C11.1001 12.6144 11.3962 12.5001 11.7119 12.4713C12.0277 12.4426 12.7309 12.0543 12.8744 11.6517C13.018 11.2491 13.018 10.9039 12.9749 10.8319C12.9319 10.76 12.817 10.7168 12.6448 10.6307C12.4725 10.5444 11.6258 10.1272 11.4679 10.0697C11.31 10.0122 11.1952 9.98348 11.0803 10.1561C10.9655 10.3285 10.6357 10.7168 10.5352 10.8319C10.4347 10.9471 10.3342 10.9615 10.162 10.8752C9.98969 10.7887 9.43498 10.6068 8.77695 10.0194C8.26493 9.56236 7.9193 8.99791 7.81878 8.82526C7.71834 8.65284 7.80806 8.55943 7.89441 8.47346C7.97179 8.39619 8.0667 8.27212 8.15284 8.17148C8.23877 8.07078 8.26744 7.99892 8.32485 7.88389C8.38233 7.7688 8.35359 7.66809 8.31055 7.58184C8.26744 7.49559 7.93275 6.64285 7.7796 6.30186" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-info__column">
+                        <p>О компании <img src="images/menu-arrow.svg" alt="Открыть"></p>
+                        <a href="/">О нас</a>
+                        <a href="/">Команда</a>
+                        <a href="/">Контакты</a>
+                        <a href="/">Блог</a>
+                    </div>
+                    <div class="footer-info__column">
+                        <p>Недвижимость <img src="images/menu-arrow.svg" alt="Открыть"></p>
+                        <a href="/">Жилая</a>
+                        <a href="/">Коммерческая</a>
+                        <a href="/">Инвестиционная</a>
+                    </div>
+                    <div class="footer-info__column">
+                        <p>Услуги <img src="images/menu-arrow.svg" alt="Открыть"></p>
+                        <a href="/">По подбору недвижимости</a>
+                        <a href="/">Юридическое сопровождение</a>
+                    </div>
+                    <div class="copyrights">
+                        <p>© 2025 Estate. Все права защищены. При копировании материалов сайта ссылка на источник обязательна.</p>
+                        <p><a href="/">Политика конфиденциальности</a> • <a href="/">Соглашение об использовании</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+	<div class="wrapper">
+		<div class="content">
+            <header>
+                <div class="container">
+                    <a class="header-logo" href="/">
+                        <img src="assets/images/home/logo.svg" alt="Логотип" />
+                    </a>
+                    <a class="header-phone" href="tel:8 (800) 30-10-112">8 (800) 30-10-112</a>
+                    <p class="home-store">/ интернет-магазин</p>
+                    <button class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <section class="main">
+                <div class="container">
+                    <h1>Газовые системы пожаротушения</h1>
+                    <div class="main-bottom">
+                        <div class="main-order">
+                            <button class="btn btn-red">Купить</button>
+                            <a class="main-order__btn-scroll" href="/">Техническое обслуживание</a>
+                        </div>
+                        <div class="main-system">
+                            <ul class="main-system__list">
+                                <li class="main-system__list_item system-1">
+                                    <a href="/">
+                                        <img src="assets/images/home/main_system_1.png"  srcset="assets/images/home/main_system_1@2x.png 2x" alt="Газовая установка пожаротушения ZETA" title="Газовая установка пожаротушения ZETA" />
+                                    </a>
+                                </li>
+                                <li class="main-system__list_item system-2">
+                                    <a href="/">
+                                        <img src="assets/images/home/main_system_2.png"  srcset="assets/images/home/main_system_2@2x.png 2x" alt="Модуль газового пожаротушения подвесной (МГПП)" title="Модуль газового пожаротушения подвесной (МГПП)" />
+                                    </a>
+                                </li>
+                                <li class="main-system__list_item system-3">
+                                    <a href="/">
+                                        <img src="assets/images/home/main_system_3.png"  srcset="assets/images/home/main_system_3@2x.png 2x" alt="Средство газового пожаротушения (СГП)" title="Средство газового пожаротушения (СГП)" />
+                                    </a>
+                                </li>
+                                <li class="main-system__list_item system-4">
+                                    <a href="/">
+                                        <img src="assets/images/home/main_system_4.png"  srcset="assets/images/home/main_system_4@2x.png 2x" alt="Автоматическая установка пожаротушения МГП" title="Автоматическая установка пожаротушения МГП" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="main-system__title">Модуль газового пожаротушения подвесной (МГПП)</p>
+                            <div class="main-system__description">
+                                <p class="main-system__description_size">Объемное тушение</p>
+                                <p class="main-system__description_location">Локальное тушение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="economy">
+                <div class="container">
+                    <h2>Экономия при применении продукции BONTEL до 60%</h2>
+                    <div class="economy-pagination">
+                        <div class="slider-pagination__btn--prev">
+                            <img src="assets/images/home/slider-arrow.svg">
+                        </div>
+                        <div class="slider-pagination__btn--next">
+                            <img src="assets/images/home/slider-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="economy-slider swiper">
+                        <div class="economy__items swiper-wrapper">
+                            <div class="economy__items_single swiper-slide">
+                                <picture>
+                                    <img src="assets/images/home/economy_icon_1.png" srcset="assets/images/home/economy_icon_1@2x.png 2x" alt="Автоматическая установка пожаротушения МГП" title="Автоматическая установка пожаротушения МГП" />
+                                </picture>
+                                <p class="single-title">Технологические<br>помещения</p>
+                                <ul class="single__list">
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">1</span>
+                                        <p class="single__list_text">герметизацию помещений</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">2</span>
+                                        <p class="single__list_text">системы газоудаления</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">3</span>
+                                        <p class="single__list_text">монтаж громоздких<br>трубопроводных конструкций</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">4</span>
+                                        <p class="single__list_text">последующее, дорогостоящее<br>тех. обслуживание</p>
+                                    </li>
+                                </ul>
+                                <p class="single__discount">Экономия средств<br><span>до 60 %</span></p>
+                            </div>
+                            <div class="economy__items_single swiper-slide">
+                                <picture>
+                                    <img src="assets/images/home/economy_icon_2.png"  srcset="assets/images/home/economy_icon_2@2x.png 2x" alt="Автоматическая установка пожаротушения МГП" title="Автоматическая установка пожаротушения МГП" />
+                                </picture>
+                                <p class="single-title">Общественные<br>здания</p>
+                                <ul class="single__list">
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">1</span>
+                                        <p class="single__list_text">насосные станции</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">2</span>
+                                        <p class="single__list_text">монтаж громоздких<br>трубопроводных конструкций</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">3</span>
+                                        <p class="single__list_text">систему утилизации воды</p>
+                                    </li>
+                                </ul>
+                                <p class="single__discount">Экономия средств<br><span>до 60 %</span></p>
+                            </div>
+                            <div class="economy__items_single swiper-slide">
+                                <picture>
+                                    <img src="assets/images/home/economy_icon_3.png"  srcset="assets/images/home/economy_icon_3@2x.png 2x" alt="Автоматическая установка пожаротушения МГП" title="Автоматическая установка пожаротушения МГП" />
+                                </picture>
+                                <p class="single-title">Промышленные<br>здания</p>
+                                <ul class="single__list">
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">1</span>
+                                        <p class="single__list_text">насосные станции</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">2</span>
+                                        <p class="single__list_text">трубопроводные конструкции</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">3</span>
+                                        <p class="single__list_text">резервуары пожаротушения</p>
+                                    </li>
+                                    <li class="single__list_item">
+                                        <span class="single__list_number">4</span>
+                                        <p class="single__list_text">систему утилизации воды</p>
+                                    </li>
+                                </ul>
+                                <p class="single__discount">Экономия средств<br><span>до 60 %</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="avantages">
+                <div class="container">
+                    <h2>Преимущества</h2>
+                    <div class="avantages__list">
+                        <div class="avantages__list_item avantages-1">
+                            <p class="avantages-text">Срок не менее 20 лет</p>
+                            <img src="assets/images/home/avantages_icon_1.svg"  alt="Срок не менее 20 лет" title="Срок не менее 20 лет" />
+                        </div>
+                        <div class="avantages__list_item avantages-2">
+                            <p class="avantages-text">Реализуем проекты под ключ</p>
+                            <img src="assets/images/home/avantages_icon_2.svg"  alt="Реализуем проекты под ключ" title="Реализуем проекты под ключ" />
+                        </div>
+                        <div class="avantages__list_item avantages-3">
+                            <p class="avantages-text">Партнерские вознаграждение <br><span>для монтажных организаций и интеграторы</span></p>
+                            <img src="assets/images/home/avantages_icon_3.svg"  alt="Партнерские вознаграждение" title="Партнерские вознаграждение" />
+                        </div>
+                        <div class="avantages__list_item avantages-4">
+                            <p class="avantages-text">Заправляем 3 видами ГОТВ <br><span>ФК-5-1-12, хладоном 125 и хладоном 227еа</span></p>
+                            <img src="assets/images/home/avantages_icon_4.svg"  alt="Заправляем 3 видами ГОТВ" title="Заправляем 3 видами ГОТВ" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="efficiency">
+                <picture>
+                    <img class="efficiency__bg" src="assets/images/home/efficiency_bg.png"  srcset="assets/images/home/efficiency_bg@2x.png 2x" />
+                </picture>
+                <div class="container">
+                    <h2>Техническая эффективность</h2>
+                    <div class="efficiency__list">
+                        <div class="efficiency__list_item efficiency-1">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_1.png"  srcset="assets/images/home/efficiency_icon_1@2x.png 2x" alt="простота монтажа и обслуживания" title="простота монтажа и обслуживания" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">простота монтажа и&nbsp;обслуживания</p>
+                        </div>
+                        <div class="efficiency__list_item efficiency-2">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_2.png"  srcset="assets/images/home/efficiency_icon_2@2x.png 2x" alt="не требует частого тех. обслуживания" title="не требует частого тех. обслуживания" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">не требует частого тех.&nbsp;обслуживания</p>
+                        </div>
+                        <div class="efficiency__list_item efficiency-3">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_3.png"  srcset="assets/images/home/efficiency_icon_3@2x.png 2x" alt="долгий срок эксплуатации" title="долгий срок эксплуатации" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">долгий срок эксплуатации</p>
+                        </div>
+                        <div class="efficiency__list_item efficiency-4">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_4.png"  srcset="assets/images/home/efficiency_icon_4@2x.png 2x" alt="гарантированнаяработа установок" title="гарантированнаяработа установок" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">гарантированная работа установок</p>
+                        </div>
+                        <div class="efficiency__list_item efficiency-5">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_5.png"  srcset="assets/images/home/efficiency_icon_5@2x.png 2x" alt="развитая дилерская сеть" title="развитая дилерская сеть" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">развитая дилерская сеть</p>
+                        </div>
+                        <div class="efficiency__list_item efficiency-6">
+                            <div class="efficiency__list_item-image">
+                                <picture>
+                                    <img src="assets/images/home/efficiency_icon_6.png"  srcset="assets/images/home/efficiency_icon_6@2x.png 2x" alt="высочайшее качество материалов" title="высочайшее качество материалов" />
+                                </picture>
+                            </div>
+                            <p class="efficiency__list_text">высочайшее качество материалов</p>
+                        </div>
+                    </div>
+                    <div class="efficiency__img">
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="assets/images/home/efficiency_image.png 1x, assets/images/home/efficiency_image@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="assets/images/home/efficiency_image_mob.png">
+                            <img class="lazy" src="assets/images/home/efficiency_image_low.png" data-srcset="assets/images/home/efficiency_image@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                        </picture>
+                    </div>
+                    <p class="efficiency__description">Использование продукции BONTEL приводит к снижению материальных и прочих расходов на приобретение и монтаж систем противопожарной защиты и их последующее техническое обслуживание.</p>
+                    <a class="efficiency__btn" href="https://youtu.be/4flxc4gXzK4" data-fancybox>
+                        <img src="assets/images/home/play.svg" />
+                        <span>Смотреть видео</span>
+                    </a>
+                </div>
+            </section>
+            <section class="demonstration">
+                <picture>
+                    <img class="demonstration__bg" src="assets/images/home/demonstration_bg.png"  srcset="assets/images/home/demonstration_bg@2x.png 2x" />
+                </picture>
+                <div class="container">
+                    <h2>Демонстрация работы</h2>
+                    <picture>
+                        <source media="(min-width: 992px)" data-srcset="assets/images/home/demonstration_image.png 1x, assets/images/home/demonstration_image@2x.png 2x">
+                        <source media="(max-width: 991px)" data-srcset="assets/images/home/demonstration_image_mob.png">
+                        <img class="lazy demonstration__image" src="assets/images/home/demonstration_image_low.png" data-srcset="assets/images/home/demonstration_image@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                    </picture>
+                    <div class="demonstration-pagination">
+                        <div class="slider-pagination__btn--prev_video">
+                            <img src="assets/images/home/slider-arrow.svg">
+                        </div>
+                        <div class="slider-pagination__btn--next_video">
+                            <img src="assets/images/home/slider-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="demonstration-slider swiper">
+                        <div class="demonstration__video swiper-wrapper">
+                            <a class="demonstration__video_item swiper-slide" href="https://youtu.be/4flxc4gXzK4" data-fancybox>
+                                <picture>
+                                    <source media="(min-width: 992px)" data-srcset="assets/images/home/demonstration_video_preview_1.png 1x, assets/images/home/demonstration_video_preview_1@2x.png 2x">
+                                    <source media="(max-width: 991px)" data-srcset="assets/images/home/demonstration_video_preview_1_mob.png">
+                                    <img class="lazy video-preview" src="assets/images/home/demonstration_video_preview_1_low.png" data-srcset="assets/images/home/demonstration_video_preview_1@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                                </picture>
+                                <img class="video-play" src="assets/images/home/play.svg" />
+                                <p class="video-title">Как защитить сервер от&nbsp;возгорания?</p>
+                                <p class="video-description">Какое то описание</p>
+                            </a>
+                            <a class="demonstration__video_item swiper-slide" href="https://youtu.be/4flxc4gXzK4" data-fancybox>
+                                <picture>
+                                    <source media="(min-width: 992px)" data-srcset="assets/images/home/demonstration_video_preview_2.png 1x, assets/images/home/demonstration_video_preview_2@2x.png 2x">
+                                    <source media="(max-width: 991px)" data-srcset="assets/images/home/demonstration_video_preview_2_mob.png">
+                                    <img class="lazy video-preview" src="assets/images/home/demonstration_video_preview_2_low.png" data-srcset="assets/images/home/demonstration_video_preview_2@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                                </picture>
+                                <img class="video-play" src="assets/images/home/play.svg" />
+                                <p class="video-title">Зачем модуль газового пожаротушения водителю?</p>
+                                <p class="video-description">Какое то описание</p>
+                            </a>
+                            <a class="demonstration__video_item swiper-slide" href="https://youtu.be/4flxc4gXzK4" data-fancybox>
+                                <picture>
+                                    <source media="(min-width: 992px)" data-srcset="assets/images/home/demonstration_video_preview_3.png 1x, assets/images/home/demonstration_video_preview_3@2x.png 2x">
+                                    <source media="(max-width: 991px)" data-srcset="assets/images/home/demonstration_video_preview_3_mob.png">
+                                    <img class="lazy video-preview" src="assets/images/home/demonstration_video_preview_3_low.png" data-srcset="assets/images/home/demonstration_video_preview_3@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                                </picture>
+                                <img class="video-play" src="assets/images/home/play.svg" />
+                                <p class="video-title">Как избежать возгорания проводки?</p>
+                                <p class="video-description">Какое то описание</p>
+                            </a>
+                            <a class="demonstration__video_item swiper-slide" href="https://youtu.be/4flxc4gXzK4" data-fancybox>
+                                <picture>
+                                    <source media="(min-width: 992px)" data-srcset="assets/images/home/demonstration_video_preview_4.png 1x, assets/images/home/demonstration_video_preview_4@2x.png 2x">
+                                    <source media="(max-width: 991px)" data-srcset="assets/images/home/demonstration_video_preview_4_mob.png">
+                                    <img class="lazy video-preview" src="assets/images/home/demonstration_video_preview_4_low.png" data-srcset="assets/images/home/demonstration_video_preview_4@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                                </picture>
+                                <img class="video-play" src="assets/images/home/play.svg" />
+                                <p class="video-title">Как защитить серверное помещение от пожара?</p>
+                                <p class="video-description">Какое то описание</p>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <section class="service">
+                <div class="container">
+                    <h2>Техническое обслуживание</h2>
+                    <p>Cертифицированные специалисты ГК «БОНТЕЛ» готовы перезарядить, заправить после срабатывания и отремонтировать противопожарные устройства, а также заменить комплектующие, сделать плановое переосвидетельствование и продлить срок службы огнетушителей.</p>
+                    <p>Перезарядка оборудования BONTEL должна выполняться только у авторизованных компаний, поскольку ОТВ BONTEL является продуктом компании и его нельзя приобрести у других СТО. Если вам требуется перезарядка, оставьте заявку ниже, и мы свяжемся с вами, чтобы подобрать ближайший пункт технического обслуживания продукции BONTEL.</p>
+                    <div class="order">
+                        <picture>
+                            <source media="(min-width: 992px)" data-srcset="assets/images/home/service_image.png 1x, assets/images/home/service_image@2x.png 2x">
+                            <source media="(max-width: 991px)" data-srcset="assets/images/home/service_image_mob.png">
+                            <img class="lazy service-image" src="assets/images/home/service_image_low.png" data-srcset="assets/images/home/service_image@2x.png 2x" alt="Техническая эффективность" title="Техническая эффективность" />
+                        </picture>
+                        <h3>Оставить заявку</h3>
+                        <p>Оставьте заявку на заказ оборудования или техническое обслуживание, менеджер свяжется с вами в ближайшее время</p>
+                        <form class="form-order">
+                            <div class="form-order__elem form-name">
+                                <input class="form-order__elem__input" type="text" name="name" minlength="2" placeholder="Ваше имя*" required="required" />
+                            </div>
+                            <div class="form-order__elem form-email">
+                                <input class="form-order__elem__input" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="E-mail*" required="required" />
+                            </div>
+                            <div class="form-order__elem form-phone">
+                                <input class="form-order__elem__input" type="tel" name="phone" placeholder="+7(999) 000 00 00*" required="required" />
+                            </div>
+                            <div class="form-order__elem form-message">
+                                <input class="form-order__elem__input" type="text" name="message" placeholder="Сообщение*" required="required" />
+                            </div>
+                            <div class="form-order__elem form-order__elem__submit">
+                                <p class="form-order__elem__personal form-order__elem__personal-main">
+                                    <span class="personal-checkbox"><span></span></span></span>
+                                    <span class="personal-text">Даю согласие на обработку <a href="/" target="_blank">персональных&nbsp;данных</a></span>
+                                </p>
+                                <button class="btn btn-red" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <div class="container">
+                    <a class="footer-logo" href="/">
+                        <img src="assets/images/home/logo.svg" alt="Логотип" />
+                    </a>
+                    <div class="footer-work">Время работы:<br>пн.-пт. 09:00-18:00</div>
+                    <div class="footer-address">г. Щелково, Московская область, Фряновское шоссе, д. 1, Торговый центр "GRAND PLAZA"</div>
+                    <div class="footer-contacts">
+                        <a class="footer-contacts__link" href="tel:+74993222112">+7(499) 322-21-12</a>
+                        <a class="footer-contacts__link" href="mailto:zapros@bontel.ru">zapros@bontel.ru</a>
+                    </div>
+                    <p class="footer-policy">Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных, в соответствии с <a href="/" target="_blank"> Политикой конфиденциальности</a>.</p>
+                </div>
+            </footer>
+		</div>
+	</div>
+    <div class="menu">
+        <div class="menu__neader">
+            <div class="container">
+                <a class="menu__neader-logo" href="/">
+                    <img src="assets/images/home/logo.svg" alt="Логотип" />
+                </a>
+                <a class="header-phone" href="tel:8 (800) 30-10-112">8 (800) 30-10-112</a>
+                <p class="header-store">/ интернет-магазин</p>
+                <button class="menu-close">
+                    <img src="assets/images/home/menu-close.svg" alt="Закрыть" />
+                </button>
+            </div>
+        </div>
+        <div class="menu__content">
+            <div class="container">
+                <div class="content__info">
+                    <ul class="content__info_links">
+                        <li>
+                            <a class="content__info_links-item" href="/">Газовая установка пожаротушения ZETA</a>
+                        </li>
+                        <li>
+                            <a class="content__info_links-item" href="/">Автоматические установки пожаротушения (МГП)</a>
+                        </li>
+                        <li>
+                            <a class="content__info_links-item" href="/">Средство газового пожаротушения </a>
+                        </li>
+                        <li>
+                            <a class="content__info_links-item" href="/">Модуль газового пожаротушения подвесной</a>
+                        </li>
+                    </ul>
+                    <div class="content__info_footer">
+                        <p class="content__info_footer-address">г. Щелково, Московская область,<br>Фряновское шоссе, д. 1,<br>Торговый центр  "GRAND PLAZA"</p>
+                        <p class="content__info_footer-contacts">Время работы:<br>пн.-пт. 09:00-18:00<br><a href="mailto:zapros@bontel.ru">zapros@bontel.ru</a></p>
+                    </div>
+                </div>
+                <div class="content__form">
+                    <form class="form-order">
+                        <h3>Оставить заявку</h3>
+                        <div class="form-order__elem form-name">
+                            <input class="form-order__elem__input" type="text" name="name" minlength="2" placeholder="Ваше имя*" required="required" />
+                        </div>
+                        <div class="form-order__elem form-email">
+                            <input class="form-order__elem__input" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="E-mail*" required="required" />
+                        </div>
+                        <div class="form-order__elem form-phone">
+                            <input class="form-order__elem__input" type="tel" name="phone" placeholder="+7(999) 000 00 00*" required="required" />
+                        </div>
+                        <div class="form-order__elem form-message">
+                            <input class="form-order__elem__input" type="text" name="message" placeholder="Сообщение*" required="required" />
+                        </div>
+                        <div class="form-order__elem form-order__elem__submit">
+                            <p class="form-order__elem__personal form-order__elem__personal-menu">
+                                <span class="personal-checkbox"><span></span></span></span>
+                                <span class="personal-text">Даю согласие на обработку <a href="/" target="_blank">персональных&nbsp;данных</a></span>
+                            </p>
+                            <button class="btn btn-red" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="menu__footer">
+            <div class="container">
+                <div class="footer-address">г. Щелково, Московская область, Фряновское шоссе, д. 1, Торговый центр "GRAND PLAZA"</div>
+                <div class="footer-work">Время работы:<br>пн.-пт. 09:00-18:00</div>
+                <div class="footer-contacts">
+                    <a class="footer-contacts__link" href="tel:+74993222112">+7(499) 322-21-12</a>
+                    <a class="footer-contacts__link" href="mailto:zapros@bontel.ru">zapros@bontel.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+    -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gsap.min.js" defer></script>
+	<script src="js/ScrollTrigger.min.js" defer></script>
+	<script src="js/ScrollSmoother.min.js" defer></script>
+    <script src="js/lazyload.min.js" defer></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

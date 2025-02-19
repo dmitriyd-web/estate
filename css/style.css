@@ -1,0 +1,948 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --text-color: #111111;
+    --blue-color: #0048CE;
+    --dark-blue: #7D8CB4;
+}
+
+ul[class], ol[class] {
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    -webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+  
+::-webkit-scrollbar-track {
+    background: #A3BFCE;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 10px;
+    border: 3px solid #050c26; /* Оформление границ бегунка */
+}
+
+html {
+    min-width: 320px;
+    margin: 0;
+    font-size: 1px;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background: var(--white-color);
+    color: var(--text-color);
+    font-size: 16rem;
+    line-height: 1.4;
+    font-weight: 400;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320rem;
+    padding: 0 20rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 -20rem;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 60rem;
+    width: 100%;
+    max-width: 296rem;
+    background: rgba(0,5,140,0.81);
+    background: -moz-linear-gradient(left, rgba(0,5,140,0.81) 0%, rgba(15,83,255,0.63) 59%, rgba(15,83,255,0.5) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,5,140,0.81)), color-stop(59%, rgba(15,83,255,0.63)), color-stop(100%, rgba(15,83,255,0.5)));
+    background: -webkit-linear-gradient(left, rgba(0,5,140,0.81) 0%, rgba(15,83,255,0.63) 59%, rgba(15,83,255,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0,5,140,0.81) 0%, rgba(15,83,255,0.63) 59%, rgba(15,83,255,0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0,5,140,0.81) 0%, rgba(15,83,255,0.63) 59%, rgba(15,83,255,0.5) 100%);
+    background: linear-gradient(to right, rgba(0,5,140,0.81) 0%, rgba(15,83,255,0.63) 59%, rgba(15,83,255,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00058c', endColorstr='#0f53ff', GradientType=1 );
+    border-radius: 50rem;
+    cursor: pointer;
+    z-index: 3;
+    transition: .3s;
+}
+
+.btn span {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 1;
+    letter-spacing: 0; 
+    color: var(--white-color)
+}
+
+.btn:hover {
+    background: var(--blue-color);
+}
+
+.btn:active {
+    background: linear-gradient(0deg, #003AA6, #003AA6),
+    linear-gradient(90deg, rgba(0, 72, 206, 0) 0%, rgba(212, 223, 248, 0) 100%);
+}
+
+/*======= header =======*/
+
+header {
+    padding: 25rem 0;
+}
+
+header .row {
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 112rem;
+    font-weight: 700;
+    font-size: 36rem;
+    line-height: 50rem;
+    letter-spacing: -1%;
+    color: var(--blue-color);
+    margin: 0 20rem;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+.navbar ul.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li.has-child ul {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: -10rem;
+    padding: 10rem;
+    background-color: var(--white-color);
+    z-index: 12;
+}
+
+.navbar ul li.has-child:hover ul {
+    display: block;
+}
+
+.navbar ul li.has-child ul li:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    width: calc(100% + 20rem);
+    height: 1rem;
+    background-color: #D9E4F8;
+}
+
+.navbar ul li a {
+    font-family: "Golos Text", serif;
+    display: flex;
+    align-items: center;
+    font-size: 16rem;
+    line-height: 22.4rem;
+    letter-spacing: 0;
+    padding: 6rem 20rem;
+    color: var(--blue-color);
+    transition: .3s;
+}
+
+.navbar ul li a img {
+    position: relative;
+    top: 1rem;
+    width: 8rem;
+    margin: 0 0 0 6rem;
+    transition: .3s;
+}
+
+.navbar ul li:hover a img {
+    transform: rotate(-180deg);
+}
+
+.navbar .header-contacts {
+    display: none;
+}
+
+.messagers {
+    display: flex;
+    gap: 10rem;
+    margin: 0 0 0 10rem;
+}
+
+.messagers a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-color);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.messagers a:hover {
+    background-color: var(--white-color);
+}
+
+.messagers a.telegram svg {
+    width: 14rem;
+}
+
+.messagers a.whatsapp svg {
+    position: relative;
+    top: -1rem;
+    width: 18rem;
+}
+
+.messagers a svg path {
+    transition: .3s;
+}
+
+.messagers a:hover svg path {
+    fill: var(--blue-color);
+}
+
+.phones {
+    margin: 0 0 0 20rem;
+}
+
+.phones a {
+    font-family: "Golos Text", serif;
+    letter-spacing: 0;
+    color: var(--blue-color);
+}
+
+.header-language {
+    font-family: "Golos Text", serif;
+    font-size: 16rem;
+    line-height: 22.4rem;
+    letter-spacing: 0;
+    color: var(--blue-color);
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: Auto;
+    text-decoration-thickness: Auto;
+    margin: 0 20rem;
+}
+
+header .menu-toggle {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    width: 30rem;
+    height: 19rem;
+    margin: 0 20rem 0 30rem;
+    cursor: pointer;
+}
+
+header .menu-toggle span {
+    display: block;
+    position: absolute;
+    background-color: var(--blue-color);
+    width: 30rem;
+    height: 1rem;
+    transition: .3s;
+}
+
+header .menu-toggle span:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+header .menu-toggle span:nth-child(2) {
+    left: 0;
+    top: 9rem;
+}
+
+header .menu-toggle span:nth-child(3) {
+    left: 0;
+    top: 18rem;
+}
+
+header .menu-toggle.open-menu span:nth-child(1) {
+    left: 0;
+    top: 10rem;
+    transform: rotate(45deg);
+}
+
+header .menu-toggle.open-menu span:nth-child(2) {
+    display: none;
+}
+
+header .menu-toggle.open-menu span:nth-child(3) {
+    left: 0;
+    top: 10rem;
+    transform: rotate(-45deg);
+}
+
+/*======= banner =======*/
+
+.banner-content {
+    width: calc(100% - 40rem);
+    margin: 0 20rem;
+    padding: 80rem 100rem;
+    position: relative;
+    background-color: #6D6C72;
+    border-radius: 16rem;
+    overflow: hidden;
+}
+
+.banner-content .banner-band {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner-content .banner-man {
+    position: absolute;
+    right: 106rem;
+    bottom: -12rem;
+    height: 101%;
+    aspect-ratio: 0.74198717948;
+    z-index: 5;
+}
+
+.banner-content .banner-man img {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.banner-content .banner-man .man-info {
+    position: absolute;
+    right: 0;
+    bottom: 100rem;
+    z-index: 4;
+}
+
+.banner-content .banner-man .man-info h4 {
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 24rem;
+    letter-spacing: 0;
+    color: var(--white-color);
+}
+
+.banner-content .banner-man .man-info p {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 22rem;
+    letter-spacing: 0;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.banner-content h1 {
+    position: relative;
+    max-width: 650rem;
+    font-size: 42rem;
+    line-height: 50rem;
+    font-weight: 400;
+    letter-spacing: -1%;
+    color: var(--white-color);
+    margin: 0 0 24rem;
+    z-index: 10;
+}
+
+.banner-content p {
+    font-family: "Golos Text", serif;
+    position: relative;
+    max-width: 650rem;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 24rem;
+    letter-spacing: 0;
+    color: var(--white-color);
+    margin: 0 0 10rem;
+    z-index: 10;
+}
+
+.banner-content .banner-order {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 74rem 0 0;
+    z-index: 10;
+}
+
+.banner-content .banner-order .socials {
+    position: relative;
+    margin: auto 0 auto 50rem;
+    top: 0;
+    left: 0;
+}
+
+/*======= staf =======*/
+
+.staf {
+    padding: 90rem 0 30rem;
+}
+
+.staf.staf-2 {
+    padding: 30rem 0 80rem;
+}
+
+.staf h2 {
+    width: calc(100% - 40rem);
+    font-size: 36rem;
+    line-height: 43.2rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--blue-color);
+    margin: 0 20rem 20rem;
+}
+
+.staf .staf-item {
+    width: calc(25% - 40rem);
+    margin: 20rem 20rem 0;
+    border-radius: 16rem;
+    box-shadow: 0px 14px 44px 0px #7D8CB412;
+}
+
+.staf .staf-item .staf-item__image {
+    position: relative;
+    border-radius: 16rem 16rem 0 0;
+    aspect-ratio: 1.11538461538 / 1;
+    overflow: hidden;
+}
+
+.staf .staf-item .staf-item__image .staf-photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+.socials {
+    display: flex;
+    align-items: center;    
+    gap: 12rem;
+    position: absolute;
+    left: 20rem;
+    top: 20rem;
+    z-index: 3;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    width: 23rem;
+    height: 23rem;
+}
+
+.staf .staf-item .staf-item__titile {
+    min-height: 100rem;
+    padding: 15rem;
+}
+
+.staf .staf-item .staf-item__titile h5 {
+    font-size: 18rem;
+    line-height: 30rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.staf .staf-item .staf-item__titile p {
+    font-family: "Golos Text", serif;
+    font-size: 14rem;
+    line-height: 20rem;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+/*======= footer =======*/
+
+footer {
+    background-color: #F1F4FD;
+    padding: 70rem 0 50rem;
+}
+
+footer .row {
+    align-items: normal;
+}
+
+footer .footer-contacts {
+    width: 314rem;
+    margin: 0 118rem 0 20rem;
+}
+
+footer .footer-info {
+    width: calc(100% - 472rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 85rem;
+    margin: 0 20rem 0 0;
+}
+
+footer .logo {
+    margin: 0 0 108rem;
+}
+
+footer .footer-contacts p {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 22.4rem;
+    letter-spacing: 0;
+    color: var(--blue-color);
+    margin: 0 0 8rem;
+}
+
+footer .messagers {
+    margin: 25rem 0 0;
+}
+
+footer .messagers a {
+    width: 45rem;
+    height: 45rem;
+}
+
+footer .messagers a.telegram svg {
+    width: 18rem;
+}
+
+footer .messagers a.whatsapp svg {
+    position: relative;
+    top: -1rem;
+    width: 25rem;
+}
+
+footer .footer-info .footer-info__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    min-width: 130rem;
+}
+
+footer .footer-info .footer-info__column p, footer .footer-info .footer-info__column a {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 22.4rem;
+    letter-spacing: 0;
+    color: var(--blue-color);
+}
+
+footer .footer-info .footer-info__column p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #799EE5;
+}
+
+footer .footer-info .footer-info__column p img {
+    display: none;
+    width: 12rem;
+    transition: .3s;
+}
+
+footer .footer-info .copyrights {
+    width: 100%;
+    margin: auto 0 0;
+}
+
+footer .footer-info .copyrights p {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 24rem;
+    letter-spacing: 0;
+    color: var(--blue-color);
+    opacity: .5;
+}
+
+@media screen and (max-width: 1366px) {
+
+    html {
+        font-size: .8px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+
+    html {
+        font-size: .7px;
+    }
+
+    header .messagers, header .phones {
+        display: none;
+    }
+
+    header .header-language {
+        margin: 0 0 0 auto;
+    }
+
+    header .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        width: 375rem;
+        max-width: 100%;
+        position: absolute;
+        top: 100rem;
+        left: 0;
+        background-color: var(--white-color);
+        padding: 10rem 24rem 40rem;
+        transform: translateX(-1000%);
+        transition: .3s;
+        z-index: 20;
+    }
+
+    .navbar.open {
+        transform: translateX(0);
+    }
+
+    .navbar ul li.has-child:hover ul {
+        display: none;
+    }
+
+    .navbar ul li.has-child.show ul {
+        display: block;
+        position: relative;
+    }
+
+    .navbar ul li.has-child ul {
+        top: 0;
+        left: 0;
+        padding: 15rem 0 0 20rem;
+    }
+
+    .navbar ul li.has-child ul li:nth-child(1)::before {
+        display: none;
+    }
+
+    .navbar ul li.has-child ul li + li {
+        margin-top: 20rem;
+    }
+
+    .navbar ul li.has-child ul li + li {
+        margin-top: 10rem;
+    }
+
+    .navbar ul li.has-child ul a {
+        font-family: "Golos Text", serif;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 22.4rem;
+        letter-spacing: 0;
+    }
+
+    .navbar ul li a img {
+        width: 16rem;
+    }
+
+    .navbar ul li.has-child:hover img {
+        transform: none;
+    }
+
+    .navbar ul.navbar-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28rem;
+    }
+
+    .navbar ul li a {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-size: 30rem;
+        line-height: 30rem;
+        letter-spacing: 0;
+        padding: 0;
+    }
+
+    .navbar .header-contacts {
+        display: block;
+        margin: 60rem 0 0;
+    }
+
+    .navbar .header-contacts .phones {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navbar .header-contacts .phones a {
+        font-weight: 400;
+        font-size: 14rem;
+        line-height: 24rem;
+        letter-spacing: 0;
+    }
+
+    .navbar .header-contacts .messagers {
+        display: flex !important;
+        gap: 20rem;
+        margin: 10rem 0 0 0;
+    }
+
+    .navbar .header-contacts .messagers a {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .navbar .header-contacts .messagers a.telegram svg {
+        width: 16rem;
+    }
+
+    .navbar .header-contacts .messagers a.whatsapp svg {
+        position: relative;
+        top: -1rem;
+        width: 22rem;
+    }
+
+    .banner-content {
+        padding: 80rem 30rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner-content .banner-man {
+        width: 320rem;
+        height: auto;
+    }
+
+    .staf .staf-item {
+        width: calc(50% - 40rem);
+    }
+
+    footer .logo {
+        margin: 0 0 18rem;
+    }
+
+    footer .footer-contacts {
+        width: calc(100% - 40rem);
+        margin: 0 20rem 20rem;
+    }
+
+    footer .footer-info {
+        gap: 18rem;
+        width: calc(100% - 40rem);
+        margin: 0 20rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 1px;
+    }
+
+    header {
+        padding: 25rem 0 40rem;
+    }
+
+    header .logo { 
+        font-size: 22.05rem;
+        line-height: 30.63rem;
+        margin: 0 auto 0 20rem;
+    }
+
+    header .navbar {
+        top: 95rem;
+    }
+
+    header .menu-toggle {
+        margin: 0 20rem 0 34rem;
+    }
+
+    .banner .container {
+        padding: 0;
+    }
+
+    .banner-content {
+        padding: 40rem 24rem 455rem;
+    }
+
+    .banner-content h1 {
+        font-size: 28rem;
+        line-height: 34rem;
+        margin: 0 0 18rem;
+    }
+
+    .banner-content p {
+        font-size: 15rem;
+        line-height: 22rem;
+        margin: 0;
+    }
+
+    .banner-content .banner-man {
+        right: calc(50% - 160rem);
+        bottom: -8rem;
+    }
+
+    .banner-content .banner-man .man-info {
+        right: auto;
+        left: -2rem;
+        bottom: 55rem;
+    }
+
+    .banner-content .banner-order {
+        margin: 24rem 0 0;
+    }
+
+    .banner-content .banner-order .socials {
+        position: absolute;
+        right: -6rem;
+        bottom: -390rem;
+        top: auto;
+        left: auto;
+    }
+
+    .staf {
+        padding: 40rem 0 20rem;
+    }
+
+    .staf.staf-2 {
+        padding: 20rem 0 40rem;
+    }
+
+    .staf h2 {
+        width: calc(100% - 40rem);
+        font-size: 21rem;
+        line-height: 28rem;
+        margin: 0 20rem;
+    }
+
+    .staf .staf-item {
+        width: calc(100% - 40rem);
+    }
+
+    .staf .staf-item .staf-item__titile {
+        min-height: 70rem;
+        padding: 8rem 10rem 13rem;
+    }
+
+    .staf .staf-item .staf-item__titile h5 {
+        font-size: 20rem;
+        line-height: 24rem;
+    }
+
+    .staf .staf-item .staf-item__titile p {
+        line-height: 28rem;
+    }
+
+    footer .footer-info {
+        gap: 0;
+    }
+
+    footer .footer-info .footer-info__column {
+        width: 100%;
+        padding: 14rem 0;
+    }
+
+    footer .footer-info .footer-info__column p img {
+        display: block;
+    }
+
+    footer .footer-info .footer-info__column a {
+        display: none;
+    }
+
+    footer .footer-info .footer-info__column.open img {
+        transform: rotate(-180deg);
+    }
+
+    footer .footer-info .footer-info__column.open a {
+        display: block;
+    }
+
+    footer .footer-info .footer-info__column + .footer-info__column {
+        border-top: 1px solid #D9E4F8;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    .banner-content .banner-man .man-info {
+        left: 10rem;
+    }
+
+    .banner-content .banner-order .btn {
+        max-width: 100%;
+    }
+
+    footer .footer-info .copyrights p {
+        font-size: 10rem;
+        line-height: 18rem;
+    }
+}
